@@ -1,13 +1,11 @@
 from langchain_groq import ChatGroq
 from langchain.prompts import ChatPromptTemplate
 
-# Configuração do modelo
 chat = ChatGroq(
     api_key="chave**",
     model='llama-3.3-70b-versatile'
 )
 
-# Prompt com propósito claro
 template = ChatPromptTemplate.from_messages([
     ("system", 
      "Você é um assistente que organiza a rotina diária do usuário. "
